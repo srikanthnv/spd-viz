@@ -224,6 +224,9 @@ window.onload = function(){
 	    }
 	});
 };
+function slide(name) {
+	$(name).slideToggle('fast');
+}
 
 </script>
 </head>
@@ -237,22 +240,22 @@ window.onload = function(){
 
 		</div>
 		<div id="configArea">
-			<h2>Filters</h2>
+			<h2 style="padding: 0; margin:0;">Filters</h2>
 			<small>
-				<b >Area</b><br />
+				<span class="stattitle" onclick="slide('#area')"><b >Area</b></span><br />
 				<div id="area">
 				</div>
-				<b>Carrier</b><br />
+				<span class="stattitle" onclick="slide('#carrier')"><b>Carrier</b></span><br />
 				<div id="carrier">
 				</div>
-				<b>Network type</b><br />
+				<span class="stattitle" onclick="slide('#network')"><b>Network type</b></span><br />
 				<div id="network">
 				</div>
-				<b>Date Range</b><br /><br /><br />
+				<span class="stattitle" onclick="slide('#dateslider')"><b>Date Range</b></span><br /><br /><br />
 				<div id="dateslider"></div>
 				<b>Stats</b><br />
 				<div id="stats"></div>
-				<b>Tweak Radius</b><br />
+				<b>Point Radius</b><br />
 				<div id="radiusslider" class="slider"></div><div id="radiusslidervalue"></div>
 			</small>
 		</div>

@@ -43,6 +43,12 @@
 				margin: 10px;
 
 			}
+
+			.stattitle {
+				text-decoration:underline; 
+				cursor:pointer
+
+			}
 			textarea{
 				width:260px;
 				padding:10px;
