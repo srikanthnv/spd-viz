@@ -231,13 +231,37 @@ function slide(name) {
 </script>
 </head>
 <body>
+<div id="menu">
+	Visualizing Mobile Internet Performance
+</div>
+<div id="text">
+	<table><tr>
+	<td>
+	<h3>Interpreting the Data</h3>
+	The <a href="https://storage.cloud.google.com/speedometer" target="_blank">Speedometer</a> dataset gathers cellular internet performance data
+	from mobile phone users around the world.  We calculate aggregated Round-Trip-Times (RTTs) from pings issued to various websites by mobile clients in three 
+	major metro regions, and overlay the data on to the heatmap below. 
+	</td>
+	<td width="33%">
+	<h3>Using the Visualization</h3>
+	<p>Filter the dataset for specific parameters using the controls on the right. E.g. you can select a single carrier and a single metro region Some presets and comparisons are listed at the bottom. </p>
+	</td>
+	<td width="33%">
+	<h3>Team</h3><a href="http://david.choffnes.com/" target="_blank">David Choffnes</a><sup>1</sup>, 
+	<a href="http://enl.usc.edu/~tobiasflach/" target="_blank">Tobias Flach</a><sup>2</sup>, 
+		<a href="http://www-bcf.usc.edu/~katzbass/" target="_blank">Ethan Katz-Bassett</a><sup>2</sup>, 
+			<a href="http://srikanthnv.net" target="_blank">Srikanth Nori</a><sup>2</sup>, 
+				<a href="http://nsl.cs.usc.edu/~kyriakos/" target="_blank">Kyriakos Zarifis</a><sup>2</sup>
+	<br /><br />
+	This work ties in to the paper on "Diagnosing Path Inflation of Mobile Client Traffic" submitted to IMC 2013<br />
+	</td></tr></table>
+	<hr />
+</div>
 <div id="main">
-	<h1 id="title">Heatmap</h1>
 		<div id="loading">
 			<img src="./static/load.gif" />
 		</div>
 		<div id="heatmapArea">
-
 		</div>
 		<div id="configArea">
 			<h2 style="padding: 0; margin:0;">Filters</h2>
@@ -259,6 +283,17 @@ function slide(name) {
 				<div id="radiusslider" class="slider"></div><div id="radiusslidervalue"></div>
 			</small>
 		</div>
+</div>
+<div id="footer">
+	<hr />
+<h3>Preset configurations:</h3>
+<ul>
+	<li>TBD</li>
+	<li>TBD</li>
+	<li>TBD</li>
+</ul>
+<i><sup>1</sup>North Eastern University, <sup>2</sup>University of Southern California</i><br />
+<p><small>Note: The tool seems to have a couple of browser-specific bugs. In case controls don't take effect or there's an offset in rendering the heatmap just move the map around to refresh it. We are working on fixing these.</small></p>
 </div>
 </body>
 </html>
