@@ -238,20 +238,24 @@ function slide(name) {
 	<table><tr>
 	<td>
 	<h3>Interpreting the Data</h3>
-	The <a href="https://storage.cloud.google.com/speedometer" target="_blank">Speedometer</a> dataset gathers cellular internet performance data
-	from mobile phone users around the world.  We calculate aggregated Round-Trip-Times (RTTs) from pings issued to various websites by mobile clients in three 
+	The <a href="https://storage.cloud.google.com/speedometer" target="_blank">Speedometer</a> dataset gathers Internet performance data
+	from mobile phone users around the world.  We calculate aggregated Round-Trip-Times (RTTs) from pings issued to various Google servers by mobile clients in three 
 	major metro regions, and overlay the data as a heatmap on to the geographic map below. 
 	</td>
 	<td width="33%">
 	<h3>Using the Visualization</h3>
-	<p>Filter the dataset for specific parameters using the controls on the right. E.g. you can select a single carrier and a single metro region Some presets and comparisons are listed at the bottom. </p>
+	<p>Filter the dataset for specific parameters using the controls on the right. E.g. you can select a single carrier and a single metro region. You can zoom in on specific areas to separate and compare values better.<!--Some presets and comparisons are listed at the bottom.--> </p>
 	</td>
 	<td width="33%">
-	<h3>Team</h3><a href="http://david.choffnes.com/" target="_blank">David Choffnes</a><sup>1</sup>, 
+	<h3>Team</h3>
+	<a href="http://david.choffnes.com/" target="_blank">David Choffnes</a><sup>1</sup>, 
 	<a href="http://enl.usc.edu/~tobiasflach/" target="_blank">Tobias Flach</a><sup>2</sup>, 
-		<a href="http://www-bcf.usc.edu/~katzbass/" target="_blank">Ethan Katz-Bassett</a><sup>2</sup>, 
-			<a href="http://srikanthnv.net" target="_blank">Srikanth Nori</a><sup>2</sup>, 
-				<a href="http://nsl.cs.usc.edu/~kyriakos/" target="_blank">Kyriakos Zarifis</a><sup>2</sup>
+	<a href="http://www-bcf.usc.edu/~katzbass/" target="_blank">Ethan Katz-Bassett</a><sup>2</sup>, 
+	<a href="http://srikanthnv.net" target="_blank">Srikanth Nori</a><sup>2</sup>, 
+	<a href="http://nsl.cs.usc.edu/~kyriakos/" target="_blank">Kyriakos Zarifis</a><sup>2</sup>
+	<a href="http://cs.usc.edu/~ramesh/" target="_blank">Ramesh Govindan</a><sup>2</sup>
+	<a href="http://web.eecs.umich.edu/~zmao/" target="_blank">Z. Morley Mao</a><sup>3</sup>
+	<a href="http://www.mdw.la/" target="_blank">Matt Welsh</a><sup>4</sup>
 	<br /><br />
 	This work ties in to the paper on "Diagnosing Path Inflation of Mobile Client Traffic" submitted to IMC 2013<br />
 	</td></tr></table>
@@ -285,15 +289,19 @@ function slide(name) {
 		</div>
 </div>
 <div id="footer">
+<p><small>Note: The tool seems to have a couple of browser-specific bugs. In case controls don't take effect or there's an offset in rendering the heatmap just move the map around to refresh it. We are working on fixing these.</small></p>
 	<hr />
-<h3>Preset configurations:</h3>
+<!--<h3>Preset configurations:</h3>
 <ul>
 	<li>TBD</li>
 	<li>TBD</li>
 	<li>TBD</li>
-</ul>
-<i><sup>1</sup>North Eastern University, <sup>2</sup>University of Southern California</i><br />
-<p><small>Note: The tool seems to have a couple of browser-specific bugs. In case controls don't take effect or there's an offset in rendering the heatmap just move the map around to refresh it. We are working on fixing these.</small></p>
+</ul>-->
+<i><sup>1</sup>Northeastern University, 
+	<sup>2</sup>University of Southern California,
+	<sup>3</sup>University of Michigan,
+	<sup>4</sup>Google, Inc.
+</i><br />
 </div>
 </body>
 </html>
