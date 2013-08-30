@@ -512,6 +512,7 @@
                 image = actx.getImageData(left, top, right-left, bottom-top);
                 imageData = image.data;
                 length = imageData.length;
+                console.log(length)
                 // loop thru the area
                 for(var i=3; i < length; i+=4){
 
@@ -540,6 +541,7 @@
                     // we want the heatmap to have a gradient from transparent to the colors
                     // as long as alpha is lower than the defined opacity (maximum), we'll use the alpha value
                     imageData[i] = finalAlpha;
+                    //console.log(i);
                 }
                 // the rgb data manipulation didn't affect the ImageData object(defined on the top)
                 // after the manipulation process we have to set the manipulated data to the ImageData object
@@ -560,7 +562,7 @@
 
                 ctx.shadowOffsetX = 15000; 
                 ctx.shadowOffsetY = 15000; 
-                ctx.shadowBlur = 15; 
+                ctx.shadowBlur = 0;
 
                 ctx.beginPath();
                 ctx.arc(x - 15000, y - 15000, radius, 0, Math.PI * 2, true);
